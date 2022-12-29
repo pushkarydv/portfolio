@@ -1,0 +1,12 @@
+/* .particulate class for anime js effect on background animation */
+.particule {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin: -0.5rem 0 0 -0.5rem;
+  background: currentColor;
+  border-radius: 4px;
+  transform: scale(0);
+}
