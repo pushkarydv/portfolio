@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@next/font": "13.0.7",
-    "animejs": "^3.2.1",
     "eslint": "8.30.0",
     "eslint-config-next": "13.0.7",
     "next": "13.0.7",
