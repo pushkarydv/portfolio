@@ -2,3 +2,24 @@
 .custom-font {
   font-family: "Sora", sans-serif;
 }
+.animate-wobble {
+  animation: wobble 2s ease-in-out infinite;
+
+  transform-origin: bottom right;
+}
+@keyframes wobble {
+  0%,
+  100%,
+  40% {
+    transform: rotate(0deg);
+  }
+  50%,
+  70%,
+  90% {
+    transform: rotate(25deg);
+  }
+  60%,
+  80% {
+    transform: rotate(-25deg);
+  }
+}
