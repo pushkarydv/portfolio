@@ -1,5 +1,7 @@
-import '../styles/globals.css'
+import "../styles/tailwind_config.css";
+import "../styles/globals.css";
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  // TODO: ADD CUSTOM FONT
+  return <Component {...pageProps} />;
 }
