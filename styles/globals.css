@@ -2,6 +2,8 @@
 .custom-font {
   font-family: "Sora", sans-serif;
 }
+
+/* For hand wobble in Home/Hero section */
 .animate-wobble {
   animation: wobble 2s ease-in-out infinite;
 
@@ -24,6 +26,7 @@
   }
 }
 
+/* For text shadow component in Home/Hero section */
 .text_shadows {
   text-shadow: 3px 3px 0 #13d1ab, 6px 6px 0 #36d7b7;
   font-family: bungee, sans-serif;
