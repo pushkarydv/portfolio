@@ -51,21 +51,6 @@
   20% {
     text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
-  30% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
-  }
-  40% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
-  }
-  50% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
-  }
-  60% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
-  }
-  70% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
-  }
   80% {
     text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
@@ -87,21 +72,6 @@
   20% {
     text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
-  30% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
-  }
-  40% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
-  }
-  50% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
-  }
-  60% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
-  }
-  70% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
-  }
   80% {
     text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
@@ -117,13 +87,10 @@
     transform: translate(0px, 0px);
   }
   40% {
-    transform: translate(-3px, -3px);
-  }
-  50% {
-    transform: translate(-3px, -3px);
+    transform: translate(-4px, -4px);
   }
   60% {
-    transform: translate(-3px, -3px);
+    transform: translate(-4px, -4px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -134,13 +101,10 @@
     transform: translate(0px, 0px);
   }
   40% {
-    transform: translate(-3px, -3px);
-  }
-  50% {
-    transform: translate(-3px, -3px);
+    transform: translate(-4px, -4px);
   }
   60% {
-    transform: translate(-3px, -3px);
+    transform: translate(-4px, -4px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -182,8 +146,9 @@
   height: 50px;
   opacity: 0.5;
 }
-
+/* Coming to MObile devices whose width is less then defined */
 @media screen and (max-width: 520px) {
+  /* for custom sursor in { <Cursor/> in _app.js } */
   * {
     cursor: inherit;
   }
@@ -195,5 +160,89 @@
   }
   .cursorinnerhover {
     display: none;
+  }
+  /* For text shadow component in Home/Hero section */
+  .text_shadows {
+    text-shadow: 1px 1px 0 #13d1ab, 2px 2px 0 #36d7b7;
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: #0d9e81;
+    -webkit-animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.2rem;
+  }
+
+  @-webkit-keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+    10% {
+      text-shadow: 1px 1px 0 #36d7b7;
+    }
+    20% {
+      text-shadow: 1px 1px 0 #36d7b7, 2px 2px 0 #13d1ab;
+    }
+    80% {
+      text-shadow: 1px 1px 0 #36d7b7, 2px 2px 0 #13d1ab;
+    }
+    90% {
+      text-shadow: 1px 1px 0 #36d7b7;
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+
+  @keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+    10% {
+      text-shadow: 1px 1px 0 #36d7b7;
+    }
+    20% {
+      text-shadow: 1px 1px 0 #36d7b7, 2px 2px 0 #13d1ab;
+    }
+    80% {
+      text-shadow: 1px 1px 0 #36d7b7, 2px 2px 0 #13d1ab;
+    }
+    90% {
+      text-shadow: 1px 1px 0 #36d7b7;
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  @-webkit-keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(-2px, -2px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  @keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(-2px, -2px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
   }
 }
