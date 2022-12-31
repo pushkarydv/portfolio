@@ -25,7 +25,7 @@
 }
 
 .text_shadows {
-  text-shadow: 3px 3px 0 #13d1ab, 6px 6px 0 #36d7b7, 9px 9px #4ad4b8;
+  text-shadow: 3px 3px 0 #13d1ab, 6px 6px 0 #36d7b7;
   font-family: bungee, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -49,19 +49,19 @@
     text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   30% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab, 9px 9px #4ad4b8;
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   40% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab, 9px 9px #4ad4b8;
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   50% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab, 9px 9px #4ad4b8;
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   60% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab, 9px 9px #4ad4b8;
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   70% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab, 9px 9px #4ad4b8;
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   80% {
     text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
@@ -85,19 +85,19 @@
     text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   30% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab, 9px 9px #4ad4b8;
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   40% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab, 9px 9px #4ad4b8;
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   50% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab, 9px 9px #4ad4b8;
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   60% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab, 9px 9px #4ad4b8;
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   70% {
-    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab, 9px 9px #4ad4b8;
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
   }
   80% {
     text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
@@ -114,13 +114,13 @@
     transform: translate(0px, 0px);
   }
   40% {
-    transform: translate(-9px, -9px);
+    transform: translate(-3px, -3px);
   }
   50% {
-    transform: translate(-9px, -9px);
+    transform: translate(-3px, -3px);
   }
   60% {
-    transform: translate(-9px, -9px);
+    transform: translate(-3px, -3px);
   }
   100% {
     transform: translate(0px, 0px);
@@ -131,13 +131,13 @@
     transform: translate(0px, 0px);
   }
   40% {
-    transform: translate(-9px, -9px);
+    transform: translate(-3px, -3px);
   }
   50% {
-    transform: translate(-9px, -9px);
+    transform: translate(-3px, -3px);
   }
   60% {
-    transform: translate(-9px, -9px);
+    transform: translate(-3px, -3px);
   }
   100% {
     transform: translate(0px, 0px);
