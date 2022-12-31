@@ -1,0 +1,244 @@
+/* As we will be appliyong custom cursor later */
+* {
+  cursor: none;
+}
+/* For hand wobble in Home/Hero section */
+.animate-wobble {
+  animation: wobble 2s ease-in-out infinite;
+
+  transform-origin: bottom right;
+}
+@keyframes wobble {
+  0%,
+  100%,
+  40% {
+    transform: rotate(0deg);
+  }
+  50%,
+  70%,
+  90% {
+    transform: rotate(25deg);
+  }
+  60%,
+  80% {
+    transform: rotate(-25deg);
+  }
+}
+
+/* For text shadow component in Home/Hero section */
+.text_shadows {
+  text-shadow: 3px 3px 0 #13d1ab, 6px 6px 0 #36d7b7;
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: #0d9e81;
+  -webkit-animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@-webkit-keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 #36d7b7;
+  }
+  20% {
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
+  }
+  80% {
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
+  }
+  90% {
+    text-shadow: 3px 3px 0 #36d7b7;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 #36d7b7;
+  }
+  20% {
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
+  }
+  80% {
+    text-shadow: 3px 3px 0 #36d7b7, 6px 6px 0 #13d1ab;
+  }
+  90% {
+    text-shadow: 3px 3px 0 #36d7b7;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+@-webkit-keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-4px, -4px);
+  }
+  60% {
+    transform: translate(-4px, -4px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-4px, -4px);
+  }
+  60% {
+    transform: translate(-4px, -4px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* for custom sursor in { <Cursor/> in _app.js } */
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid green;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  transition: 0.3s all ease-out;
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #064e3b;
+  opacity: 0.4;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 0.1s all ease-out;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+/* Coming to MObile devices whose width is less then defined */
+@media screen and (max-width: 520px) {
+  /* for custom sursor in { <Cursor/> in _app.js } */
+  * {
+    cursor: inherit;
+  }
+  .cursor {
+    display: none;
+  }
+  .cursor2 {
+    display: none;
+  }
+  .cursorinnerhover {
+    display: none;
+  }
+  /* For text shadow component in Home/Hero section */
+  .text_shadows {
+    text-shadow: 1px 1px 0 #13d1ab, 2px 2px 0 #36d7b7;
+    font-family: bungee, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: calc(2rem + 5vw);
+    text-align: center;
+    margin: 0;
+    color: #0d9e81;
+    -webkit-animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+    letter-spacing: 0.2rem;
+  }
+
+  @-webkit-keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+    10% {
+      text-shadow: 1px 1px 0 #36d7b7;
+    }
+    20% {
+      text-shadow: 1px 1px 0 #36d7b7, 2px 2px 0 #13d1ab;
+    }
+    80% {
+      text-shadow: 1px 1px 0 #36d7b7, 2px 2px 0 #13d1ab;
+    }
+    90% {
+      text-shadow: 1px 1px 0 #36d7b7;
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+
+  @keyframes shadows {
+    0% {
+      text-shadow: none;
+    }
+    10% {
+      text-shadow: 1px 1px 0 #36d7b7;
+    }
+    20% {
+      text-shadow: 1px 1px 0 #36d7b7, 2px 2px 0 #13d1ab;
+    }
+    80% {
+      text-shadow: 1px 1px 0 #36d7b7, 2px 2px 0 #13d1ab;
+    }
+    90% {
+      text-shadow: 1px 1px 0 #36d7b7;
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  @-webkit-keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(-2px, -2px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  @keyframes move {
+    0% {
+      transform: translate(0px, 0px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(-2px, -2px);
+    }
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+}

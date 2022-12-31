@@ -1,5 +1,6 @@
 import "../styles/tailwind_config.css";
 import "../styles/globals.css";
+import "../styles/customConfiguration.css";
 import Cursor from "../components/global/Cursor";
 
 export default function App({ Component, pageProps }) {
