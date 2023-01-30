@@ -14,7 +14,7 @@ export default function Home() {
         <title>Pushkar Yadav</title>
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main className="text-4xl">
+      <main>
         <Hero />
         <Stats />
         <About />
