@@ -123,6 +123,7 @@
   top: 0;
   transform: translate(calc(-50% + 15px), -50%);
   transition: 0.3s all ease-out;
+  z-index: 1000;
 }
 
 .cursor2 {

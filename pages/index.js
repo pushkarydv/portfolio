@@ -10,6 +10,7 @@ export default function Home() {
       </Head>
       <main className="text-4xl">
         <Hero />
+        <Hero />
       </main>
     </>
   );
