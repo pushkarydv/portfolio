@@ -270,3 +270,43 @@
     top: 0;
   }
 }
+/* DOODLE */
+.eye {
+  /* animation: left-right-view 2.5s linear infinite; */
+  rotate: 75deg;
+}
+.eye-view {
+  transform: translateX(10%);
+  rotate: -75deg;
+  /* animation: left-right-view-eye-position 2.5s linear infinite; */
+}
+@keyframes left-right-view {
+  /* 0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  24%,
+  26% {
+    transform: rotate(-75deg);
+  }
+  74%,
+  76% {
+    transform: rotate(75deg);
+  } */
+}
+@keyframes left-right-view-eye-position {
+  /* 0%,
+  50%,
+  100% {
+    transform: rotate(0deg) translateX(-50%);
+  }
+  24%,
+  26% {
+    transform: rotate(90deg) translateX(-50%);
+  }
+  74%,
+  76% {
+    transform: rotate(0deg) translateX(-50%);
+  } */
+}

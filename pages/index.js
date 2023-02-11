@@ -6,6 +6,7 @@ import Hero from "../components/Home/Hero";
 import Projects from "../components/Home/Projects";
 import Stats from "../components/Home/Stats";
 import TechStack from "../components/Home/TechStack";
+import Doodle from "../components/micorcomponents/Doodle";
 
 export default function Home() {
   return (
@@ -14,7 +15,8 @@ export default function Home() {
         <title>Pushkar Yadav</title>
         <link rel="icon" href="/logo.png" />
       </Head>
-      <main>
+      <main className="overflow-x-hidden">
+        <Doodle />
         <Hero />
         <Stats />
         <About />
