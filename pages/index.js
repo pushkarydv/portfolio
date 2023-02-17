@@ -20,6 +20,7 @@ export default function Home() {
         <Hero />
         <About />
         <Stats />
+
         <Projects />
         <TechStack />
         <ContactForm />
