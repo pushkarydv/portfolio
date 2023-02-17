@@ -1,26 +1,27 @@
 import React from "react";
 // Import Swiper React components
-import { Pagination, EffectCards, Autoplay } from "swiper";
+import { Pagination, EffectCoverflow, A11y, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 export default function Projects() {
   return (
     <div className="my-6" id="projects">
       <div className="text-center text-5xl mt-12 mb-4">Projects</div>
       <Swiper
-        modules={[Pagination, EffectCards, Autoplay]}
+        modules={[Pagination, EffectCoverflow, Autoplay, A11y]}
         spaceBetween={50}
         autoplay={{
-          delay: 1200,
-          disableOnInteraction: true,
+          delay: 1250,
+          disableOnInteraction: false,
         }}
-        effect="cards"
+        effect="coverflow"
         slidesPerView={1}
         pagination={{ clickable: true }}
-        className="w-[90%] md:w-1/2 cursor-pointer"
+        className="w-[90%] md:w-1/2 cursor-pointer bg-white rounded-xl"
       >
         {[
           [
