@@ -5,7 +5,6 @@
 /* For hand wobble in Home/Hero section */
 .animate-wobble {
   animation: wobble 2s ease-in-out infinite;
-
   transform-origin: bottom right;
 }
 @keyframes wobble {
@@ -136,6 +135,7 @@
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: 0.1s all ease-out;
+  z-index: 999;
 }
 
 .cursorinnerhover {
@@ -246,7 +246,8 @@
 .animate-circular {
   width: 10rem;
   height: 10rem;
-  animation: circlePath 8s ease infinite;
+  animation: circlePath 10s ease infinite;
+  z-index: 0;
 }
 @keyframes circlePath {
   0% {
@@ -259,9 +260,9 @@
     width: 15rem;
     height: 15rem;
   }
-  60% {
-    left: 45%;
-    bottom: 5%;
+  70% {
+    right: 80%;
+    top: 60%;
     width: 15rem;
     height: 15rem;
   }
@@ -272,41 +273,67 @@
 }
 /* DOODLE */
 .eye {
-  /* animation: left-right-view 2.5s linear infinite; */
-  rotate: 75deg;
+  animation: left-right-view 2.5s linear infinite;
 }
 .eye-view {
-  transform: translateX(10%);
-  rotate: -75deg;
-  /* animation: left-right-view-eye-position 2.5s linear infinite; */
+  animation: left-right-view-eye-position 2.5s linear infinite;
 }
 @keyframes left-right-view {
-  /* 0%,
+  0%,
   50%,
   100% {
-    transform: rotate(0deg);
+    rotate: 0deg;
   }
   24%,
   26% {
-    transform: rotate(-75deg);
+    rotate: -75deg;
   }
   74%,
   76% {
-    transform: rotate(75deg);
-  } */
+    rotate: 75deg;
+  }
 }
 @keyframes left-right-view-eye-position {
-  /* 0%,
+  0%,
   50%,
   100% {
     transform: rotate(0deg) translateX(-50%);
   }
   24%,
   26% {
-    transform: rotate(90deg) translateX(-50%);
+    transform: rotate(-75deg) translateX(-50%);
   }
   74%,
   76% {
-    transform: rotate(0deg) translateX(-50%);
-  } */
+    transform: rotate(75deg) translateX(-50%);
+  }
+}
+#stats {
+  background-color: transparent;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      rgba(0, 0, 0, 0.05) 25%,
+      rgba(0, 0, 0, 0.05) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(0, 0, 0, 0.05) 75%,
+      rgba(0, 0, 0, 0.05) 76%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      rgba(0, 0, 0, 0.05) 25%,
+      rgba(0, 0, 0, 0.05) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(0, 0, 0, 0.05) 75%,
+      rgba(0, 0, 0, 0.05) 76%,
+      transparent 77%,
+      transparent
+    );
+  height: 100%;
+  background-size: 50px 50px;
 }
