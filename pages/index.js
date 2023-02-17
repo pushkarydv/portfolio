@@ -18,8 +18,8 @@ export default function Home() {
       <main className="overflow-x-hidden">
         <Doodle />
         <Hero />
-        <Stats />
         <About />
+        <Stats />
         <Projects />
         <TechStack />
         <ContactForm />
