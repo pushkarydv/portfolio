@@ -3,6 +3,7 @@ import About from "../components/Home/About";
 import ContactForm from "../components/Home/ContactForm";
 import Footer from "../components/Home/Footer";
 import Hero from "../components/Home/Hero";
+import LatestTweet from "../components/Home/LatestTweet";
 import Projects from "../components/Home/Projects";
 import Stats from "../components/Home/Stats";
 import TechStack from "../components/Home/TechStack";
@@ -20,8 +21,8 @@ export default function Home() {
         <Hero />
         <About />
         <Stats />
-
         <Projects />
+        <LatestTweet />
         <TechStack />
         <ContactForm />
         <Footer />
