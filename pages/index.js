@@ -7,7 +7,7 @@ import Projects from "../components/Home/Projects";
 import Stats from "../components/Home/Stats";
 import TechStack from "../components/Home/TechStack";
 import Doodle from "../components/micorcomponents/Doodle";
-
+// TODO : DYNAMIC LOADING, META TAGS - EDIT ABOUT FROM PREV PORTFOLIO
 export default function Home() {
   return (
     <>

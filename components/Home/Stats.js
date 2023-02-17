@@ -9,8 +9,8 @@ export default function Stats() {
           <span className="text-4xl font-semibold">Stats</span> <br />
           &apos;&apos; Some cool numbers &apos;&apos;
         </div>
-        <div className="flex flex-row flex-wrap font-semibold justify-between w-10/12 mx-auto items-center text-center my-6">
-          <div className="w-1/2 md:w-1/4 p-2">
+        <div className="flex flex-row flex-wrap font-semibold justify-between w-full md:w-10/12 mx-auto items-center text-center my-6">
+          <div className="w-1/2 md:w-1/4 p-1 md:p-2">
             <div className="bg-emerald-200 px-2 py-6 rounded-xl">
               <span className="text-5xl md:text-6xl">🚀</span>
               <span className="text-center text-4xl md:text-5xl text-emerald-900 block mt-6 mb-4 font-bold">
