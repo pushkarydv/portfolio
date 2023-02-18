@@ -15,21 +15,20 @@ const Footer = dynamic(() => import("../components/Home/Footer"));
 
 // TODO : META TAGS - EDIT ABOUT FROM PREV PORTFOLIO
 export default function Home() {
-  // window.addEventListener("load", function () {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.classList.add("show-left");
-  //       } else {
-  //         entry.classList.remove("show-left");
-  //       }
-  //     });
-  //   });
-  //   document
-  //     .querySelectorAll(".intersection-flex")
-  //     .forEach((el) => observer.observe(el));
-  // });
-
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("intersection-show-left");
+        } else {
+          entry.target.classList.remove("intersection-show-left");
+        }
+      });
+    });
+    document
+      .querySelectorAll(".intersection-flex")
+      .forEach((el) => observer.observe(el));
+  });
   return (
     <>
       <Head>

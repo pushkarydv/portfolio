@@ -327,3 +327,21 @@
   height: 100%;
   background-size: 50px 50px;
 }
+
+/* ---- For Intersection Observer ---- */
+.intersection-flex {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(10px);
+  transform: translateX(-100%);
+}
+.intersection-show-left {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+@media (prefers-reduces-motion) {
+  .intersection-flex {
+    transition: none;
+  }
+}
