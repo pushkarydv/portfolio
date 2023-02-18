@@ -1,4 +1,8 @@
-/* As we will be appliyong custom cursor later */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
+.custom-font {
+  font-family: "Sora", sans-serif;
+}
+
 * {
   cursor: none;
 }
