@@ -1,5 +1,10 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import dynamic from "next/dynamic";
+import { getAnalytics, logEvent } from "firebase/analytics";
+import { app } from "../config/firebase";
+
+/* ---- Page Components ---- */
 import Hero from "../components/Home/Hero";
 import Doodle from "../components/micorcomponents/Doodle";
 import About from "../components/Home/About";
@@ -14,6 +19,10 @@ const Footer = dynamic(() => import("../components/Home/Footer"));
 
 // TODO : META TAGS - EDIT ABOUT FROM PREV PORTFOLIO
 export default function Home() {
+  useEffect(() => {
+    const analytics = getAnalytics(app);
+    logEvent(analytics, "User on Home Page");
+  });
   return (
     <>
       <Head>
