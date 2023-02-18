@@ -37,7 +37,7 @@ export default function ContactForm() {
     }
   }
   return (
-    <section className="m-4 md:m-8">
+    <section className="m-4 md:m-8" id="contact">
       <div className="container mx-auto p-4 my-6 space-y-2 text-center">
         <h2 className="text-4xl font-bold">Contact Me</h2>
       </div>
