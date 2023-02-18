@@ -3,7 +3,7 @@ import { Github, LinkedIn, Twitter } from "../svgs";
 export default function Hero() {
   return (
     <>
-      <div className="min-h-[90vh] flex flex-col justify-center items-center">
+      <div className="min-h-[90vh] flex flex-col justify-center items-center intersection-flex">
         <div className="transition-all my-4 mx-2 min-w-fit text-6xl sm:text-7xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
           <p className="text-emerald-900">
             Hey.

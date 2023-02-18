@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Stats() {
   return (
-    <div className="relative" id="stats">
+    <div className="relative lg:py-20" id="stats">
       <div className="absolute bg-indigo-200 blur-3xl -z-0 animate-circular"></div>
       <div className="relative z-10 p-4">
         <div className="text-2xl text-emerald-500 text-center">

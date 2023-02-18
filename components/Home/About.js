@@ -4,16 +4,16 @@ export default function About() {
   return (
     <div id="about" className="p-4">
       <div className="content-container w-[95] lg:w-1/2 mx-auto">
-        <div className="rounded-2xl bg-yellow-400/40 p-4 backdrop-blur-lg relative mt-24 mb-12">
+        <div className="rounded-2xl bg-yellow-400/40 p-4 backdrop-blur-lg relative mt-24 mb-12 lg:mb-24">
           <img
             src="/images/profile.jpg"
-            className="rounded-full w-36 absolute top-0 -translate-y-1/2 right-0 lg:translate-x-1/2 ring-4 ring-yellow-400"
+            className="rounded-full w-36 md:w-44 lg:w-56 absolute top-0 -translate-y-1/2 right-0 lg:translate-x-1/2 ring-4 ring-yellow-400"
             alt=""
           />
-          <div className="text-4xl text-yellow-800 font-semibold my-3 lg:my-2">
+          <div className="text-4xl md:text-5xl text-yellow-800 font-semibold my-3 lg:my-2">
             About me
           </div>
-          <div className="text-base">
+          <div className="text-base md:text-xl lg:text-2xl">
             I am Pushkar Yadav a Programmer from India.
             <br />I have tried a lot of things mostly as hoppy like UI/UX,
             Photography, LAMP Stack, MERN stack, Blogging, Ethical Practices of
