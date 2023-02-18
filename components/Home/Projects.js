@@ -7,10 +7,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { ARROW_LEFT } from "../svgs";
 export default function Projects() {
   return (
     <div className="my-6" id="projects">
-      <div className="text-center text-5xl mt-12 mb-4">Projects</div>
+      <div className="text-center text-5xl mt-12">Projects</div>
+      <div className="text-center mt-2 mb-4">
+        Some personal creations of mine helping lots of people + Most of these
+        are open Source🚀
+      </div>
       <Swiper
         modules={[Pagination, EffectCoverflow, Autoplay, A11y]}
         spaceBetween={50}
@@ -116,6 +121,17 @@ export default function Projects() {
           </SwiperSlide>
         ))}
       </Swiper>
+      <div className="text-center my-8">
+        <span className="block my-4">*See my Github for more projects</span>
+        <a
+          href="http://github.com/pushkarydv"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="transition-all text-2xl w-fit py-1 px-4 lg:px-6 lg:py-2 rounded-full text-emerald-50 ring-2 ring-emerald-600 bg-emerald-600 active:scale-90 mx-auto flex flex-row items-center mb-4"
+        >
+          View Github <ARROW_LEFT className="w-6 stroke-[2] rotate-[135deg]" />
+        </a>
+      </div>
     </div>
   );
 }
