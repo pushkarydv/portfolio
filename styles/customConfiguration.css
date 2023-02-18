@@ -353,23 +353,53 @@ html {
   filter: blur(0);
   transform: translateY(0);
 }
+.intersection-flex-3d {
+  opacity: 0;
+  transition: all 0.5s;
+  filter: blur(10px);
+  transform: skew(-10deg) rotate(10deg) translateX(-100%);
+}
+.intersection-show-left-3d {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 @media (prefers-reduces-motion) {
   .intersection-flex,
-  .intersection-flex-bottom-up {
+  .intersection-flex-bottom-up,
+  .intersection-show-left-3d {
     transition: none;
   }
 }
 .intersection-flex-bottom-up:nth-child(2),
-.intersection-flex:nth-child(2) {
+.intersection-flex:nth-child(2),
+.intersection-show-left-3d:nth-child(2) {
   transition-delay: 100ms;
 }
 .intersection-flex-bottom-up:nth-child(3),
-.intersection-flex:nth-child(3) {
+.intersection-flex:nth-child(3),
+.intersection-show-left-3d:nth-child(3) {
   transition-delay: 150ms;
 }
 .intersection-flex-bottom-up:nth-child(4),
-.intersection-flex:nth-child(4) {
+.intersection-flex:nth-child(4),
+.intersection-show-left-3d:nth-child(4) {
+  transition-delay: 200;
+}
+.intersection-flex-bottom-up:nth-child(5),
+.intersection-flex:nth-child(5),
+.intersection-show-left-3d:nth-child(5) {
+  transition-delay: 250ms;
+}
+.intersection-flex-bottom-up:nth-child(6),
+.intersection-flex:nth-child(6),
+.intersection-show-left-3d:nth-child(6) {
   transition-delay: 300ms;
+}
+.intersection-flex-bottom-up:nth-child(7),
+.intersection-flex:nth-child(7),
+.intersection-show-left-3d:nth-child(7) {
+  transition-delay: 350ms;
 }
 
 /* ---- Contact me loader ---- */
