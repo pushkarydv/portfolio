@@ -1,14 +1,18 @@
 import Head from "next/head";
-import About from "../components/Home/About";
-import ContactForm from "../components/Home/ContactForm";
-import Footer from "../components/Home/Footer";
+import dynamic from "next/dynamic";
 import Hero from "../components/Home/Hero";
-import LatestTweet from "../components/Home/LatestTweet";
-import Projects from "../components/Home/Projects";
-import Stats from "../components/Home/Stats";
-import TechStack from "../components/Home/TechStack";
 import Doodle from "../components/micorcomponents/Doodle";
-// TODO : DYNAMIC LOADING, META TAGS - EDIT ABOUT FROM PREV PORTFOLIO
+import About from "../components/Home/About";
+
+/* ---- dynamic loading rest of the webpage for improved perfornamce ---- */
+const Stats = dynamic(() => import("../components/Home/Stats"));
+const Projects = dynamic(() => import("../components/Home/Projects"));
+const LatestTweet = dynamic(() => import("../components/Home/LatestTweet"));
+const TechStack = dynamic(() => import("../components/Home/TechStack"));
+const ContactForm = dynamic(() => import("../components/Home/ContactForm"));
+const Footer = dynamic(() => import("../components/Home/Footer"));
+
+// TODO : META TAGS - EDIT ABOUT FROM PREV PORTFOLIO
 export default function Home() {
   return (
     <>
