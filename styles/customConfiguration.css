@@ -2,7 +2,9 @@
 .custom-font {
   font-family: "Sora", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   cursor: none;
 }
@@ -340,8 +342,32 @@
   filter: blur(0);
   transform: translateX(0);
 }
+.intersection-flex-bottom-up {
+  opacity: 0;
+  transition: all 0.5s;
+  filter: blur(10px);
+  transform: translateY(100%);
+}
+.intersection-show-bottom-up {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
 @media (prefers-reduces-motion) {
-  .intersection-flex {
+  .intersection-flex,
+  .intersection-flex-bottom-up {
     transition: none;
   }
+}
+.intersection-flex-bottom-up:nth-child(2),
+.intersection-flex:nth-child(2) {
+  transition-delay: 100ms;
+}
+.intersection-flex-bottom-up:nth-child(3),
+.intersection-flex:nth-child(3) {
+  transition-delay: 150ms;
+}
+.intersection-flex-bottom-up:nth-child(4),
+.intersection-flex:nth-child(4) {
+  transition-delay: 300ms;
 }

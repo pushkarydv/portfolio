@@ -1,19 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Github, LinkedIn, Twitter } from "../svgs";
 export default function Hero() {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("intersection-show-bottom-up");
+        } else {
+          entry.target.classList.remove("intersection-show-bottom-up");
+        }
+      });
+    });
+    document
+      .querySelectorAll(".intersection-flex-bottom-up")
+      .forEach((el) => observer.observe(el));
+  });
   return (
     <>
-      <div className="min-h-[90vh] flex flex-col justify-center items-center intersection-flex">
+      <div className="min-h-[90vh] flex flex-col justify-center items-center">
         <div className="transition-all my-4 mx-2 min-w-fit text-6xl sm:text-7xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
-          <p className="text-emerald-900">
+          <p className="text-emerald-900  intersection-flex-bottom-up">
             Hey.
             <span className="inline-block w-fit scale-90 animate-wobble">
               👋
             </span>
           </p>
-          <p className="mt-2 font-medium text-slate-300">I&apos;m </p>
-          <p className="mt-2 font-medium text_shadows">Pushkar</p>
-          <div className="flex flex-row gap-4 mt-6">
+          <p className="mt-2 font-medium text-slate-300  intersection-flex-bottom-up">
+            I&apos;m{" "}
+          </p>
+          <p className="mt-2 font-medium text_shadows  intersection-flex-bottom-up">
+            Pushkar
+          </p>
+          <div className="flex flex-row gap-4 mt-6  intersection-flex-bottom-up">
             <a
               href="https://www.linkedin.com/in/pushkarydv"
               rel="noopener noreferrer"
