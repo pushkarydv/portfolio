@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div id="about" className="p-4">
-      <div className="content-container w-[95] lg:w-1/2 mx-auto">
+      <div className="content-container w-[95] sm:w-2/3 xl:w-1/2 mx-auto">
         <div className="rounded-2xl bg-yellow-400/40 p-4 backdrop-blur-lg relative mt-24 mb-12 lg:mb-24">
           <img
             src="/images/profile.jpg"
