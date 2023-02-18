@@ -272,40 +272,26 @@
   }
 }
 /* DOODLE */
-.eye {
-  animation: left-right-view 2.5s linear infinite;
-}
+
 .eye-view {
-  animation: left-right-view-eye-position 2.5s linear infinite;
-}
-@keyframes left-right-view {
-  0%,
-  50%,
-  100% {
-    rotate: 0deg;
-  }
-  24%,
-  26% {
-    rotate: -75deg;
-  }
-  74%,
-  76% {
-    rotate: 75deg;
-  }
+  animation: left-right-view-eye-position 5s linear infinite;
 }
 @keyframes left-right-view-eye-position {
   0%,
   50%,
   100% {
-    transform: rotate(0deg) translateX(-50%);
+    left: 50%;
+    bottom: 10%;
   }
   24%,
   26% {
-    transform: rotate(-75deg) translateX(-50%);
+    left: 30%;
+    bottom: 20%;
   }
   74%,
   76% {
-    transform: rotate(75deg) translateX(-50%);
+    left: 70%;
+    bottom: 20%;
   }
 }
 #stats {
