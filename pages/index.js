@@ -9,7 +9,7 @@ import Hero from "../components/Home/Hero";
 import Doodle from "../components/micorcomponents/Doodle";
 import About from "../components/Home/About";
 
-/* ---- dynamic loading rest of the webpage for improved perfornamce ---- */
+/* ---- dynamic loading rest of the webpage for improved performance ---- */
 const Stats = dynamic(() => import("../components/Home/Stats"));
 const Projects = dynamic(() => import("../components/Home/Projects"));
 const LatestTweet = dynamic(() => import("../components/Home/LatestTweet"));
