@@ -17,7 +17,6 @@ const TechStack = dynamic(() => import("../components/Home/TechStack"));
 const ContactForm = dynamic(() => import("../components/Home/ContactForm"));
 const Footer = dynamic(() => import("../components/Home/Footer"));
 
-// TODO : META TAGS - EDIT ABOUT FROM PREV PORTFOLIO
 export default function Home() {
   useEffect(() => {
     const analytics = getAnalytics(app);
