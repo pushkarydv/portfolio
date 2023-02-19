@@ -15,7 +15,7 @@ export default function About() {
           </div>
           <div className="text-base md:text-xl lg:text-2xl">
             I am Pushkar Yadav a Programmer from India.
-            <br />I have tried a lot of things mostly as hoppy like UI/UX,
+            <br />I have tried a lot of things mostly as hobby like UI/UX,
             Photography, LAMP Stack, MERN stack, Blogging, Ethical Practices of
             Cybersecurity but currently doing Full Stack Web development and
             built some fantastic websites.
