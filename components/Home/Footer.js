@@ -1,8 +1,22 @@
 import React from "react";
+import { ARROW_LEFT } from "../svgs";
 
 export default function Footer() {
   return (
     <footer className="text-gray-600 body-font">
+      <div className="text-center my-8 mt-28">
+        <span className="block my-4">
+          If you like the website give us a star on github😁
+        </span>
+        <a
+          href="http://github.com/pushkarydv/portfolio"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="transition-all text-2xl w-fit py-1 px-4 lg:px-6 lg:py-2 rounded-full text-purple-50 ring-2 ring-purple-600 bg-purple-600 active:scale-90 mx-auto flex flex-row items-center mb-4"
+        >
+          Visit Repo <ARROW_LEFT className="w-6 stroke-[2] rotate-[135deg]" />
+        </a>
+      </div>
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">
           © 2023 Pushkar Yadav —
