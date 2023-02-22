@@ -22,7 +22,6 @@ export default function Home() {
     const analytics = getAnalytics(app);
     logEvent(analytics, "User on Home Page");
   });
-  console.log(process.env.NEXT_PUBLIC_authDomain);
   return (
     <>
       <Head>
