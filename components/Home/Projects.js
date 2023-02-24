@@ -20,7 +20,7 @@ export default function Projects() {
         modules={[Pagination, EffectCoverflow, Autoplay, A11y]}
         spaceBetween={50}
         autoplay={{
-          delay: 1250,
+          delay: 1550,
           disableOnInteraction: false,
         }}
         effect="coverflow"
