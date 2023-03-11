@@ -15,9 +15,8 @@ export default function About() {
           </div>
           <div className="text-base md:text-xl lg:text-2xl">
             I am Pushkar Yadav a Programmer from India.
-            <br />I have tried a lot of things mostly as hobby like UI/UX,
-            Photography, LAMP Stack, MERN stack, Blogging, Ethical Practices of
-            Cybersecurity but currently doing Full Stack Web development and
+            <br />I have tried a lot of things like UI/UX,
+            Photography, LAMP Stack, MERN stack, Blogging most of them as hobby but currently doing Full Stack Web development and
             built some fantastic websites.
             <div className="my-4 flex flex-row gap-4">
               <a
