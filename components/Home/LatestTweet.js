@@ -10,7 +10,7 @@ export default function LatestTweet() {
         target="_blank"
       >
         <img
-          src="https://tweeco.pushkaryadav.in/api/handle/pushkaryadavin?bg=BF55EC"
+          src="https://tweeco.pushkaryadav.in/api/handle/pushkaryadavin"
           className="w-full md:w-[80%] lg:w-1/2 mx-auto"
         />
       </a>
