@@ -5,17 +5,17 @@ import { getAnalytics, logEvent } from "firebase/analytics";
 import { app } from "../config/firebase";
 
 /* ---- Page Components ---- */
-import Hero from "../components/Home/Hero";
-import Doodle from "../components/micorcomponents/Doodle";
-import About from "../components/Home/About";
+import Hero from "../components/Home/HomeHero";
+import Doodle from "../components/micorcomponents/EyeDoodle";
+import About from "../components/Home/HomeAbout";
 
 /* ---- dynamic loading rest of the webpage for improved performance ---- */
-const Stats = dynamic(() => import("../components/Home/Stats"));
-const Projects = dynamic(() => import("../components/Home/Projects"));
-const LatestTweet = dynamic(() => import("../components/Home/LatestTweet"));
-const TechStack = dynamic(() => import("../components/Home/TechStack"));
-const ContactForm = dynamic(() => import("../components/Home/ContactForm"));
-const Footer = dynamic(() => import("../components/Home/Footer"));
+const Stats = dynamic(() => import("../components/Home/HomeStats"));
+const Projects = dynamic(() => import("../components/Home/HomeProjects"));
+const LatestTweet = dynamic(() => import("../components/Home/HomeLatestTweet"));
+const TechStack = dynamic(() => import("../components/Home/HomeTechStack"));
+const ContactForm = dynamic(() => import("../components/Home/HomeContactForm"));
+const Footer = dynamic(() => import("../components/global/Footer"));
 
 export default function Home() {
   useEffect(() => {
