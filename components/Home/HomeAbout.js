@@ -23,7 +23,7 @@ export default function About() {
                 className="bg-yellow-900 text-white transition-all hover:scale-95 font-semibold py-2 px-4 rounded-lg cursor-pointer hover:shadow-md hover:shadow-black/10"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://drive.google.com/file/d/1BSLZwSJMuTkBmTaAXLB_shqVQVCTahEb/view?usp=sharing"
+                href="https://drive.google.com/file/d/189kzUrLgCO2v7sIJRI02ChWtjTXWdy3Z/view?usp=sharing"
               >
                 Resume
               </a>
