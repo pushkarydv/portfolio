@@ -29,7 +29,7 @@ function HomeStats() {
           <div className='bg-white text-neutral-950 m-1 rounded-md md:m-0 md:mr-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 hover:transition-all'>
             <PiAppWindowLight size={"6rem"} />
             <p className='text-4xl font-semibold'>{stats.products}</p>
-            <p className='text-2xl'>Products</p>
+            <p className='text-xl text-center'>Products</p>
           </div>
         </a>
         <a
@@ -41,7 +41,7 @@ function HomeStats() {
           <div className='bg-white text-neutral-950 m-1 rounded-md md:m-0 md:mx-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 hover:transition-all'>
             <PiUsersThreeBold size={"6rem"} />
             <p className='text-4xl font-semibold'>{stats.users}</p>
-            <p className='text-2xl'>Users</p>
+            <p className='text-xl text-center'>Users</p>
           </div>
         </a>
         <a
@@ -53,7 +53,7 @@ function HomeStats() {
           <div className='bg-white text-neutral-950 m-1 rounded-md md:m-0 md:mx-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 hover:transition-all'>
             <PiCameraLight size={"6rem"} />
             <p className='text-4xl font-semibold'>{stats.photography}</p>
-            <p className='text-2xl'>Photography Views</p>
+            <p className='text-xl text-center'>Photography Views</p>
           </div>
         </a>
         <a
@@ -65,7 +65,7 @@ function HomeStats() {
           <div className='bg-white text-neutral-950 m-1 rounded-md md:m-0 md:ml-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 hover:transition-all'>
             <PiMapTrifoldLight size={"6rem"} />
             <p className='text-4xl font-semibold'>{stats.countries}</p>
-            <p className='text-2xl'>country users</p>
+            <p className='text-xl text-center'>Country users</p>
           </div>
         </a>
       </div>

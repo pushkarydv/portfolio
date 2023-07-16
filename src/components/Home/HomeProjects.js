@@ -22,7 +22,7 @@ function HomeProjects() {
       "https://tweeco.pushkaryadav.in",
       "Tweets ✒️ shouldn't be limited to twitter🐧 : Let's integrate them anywhere fully rendered✨ with this simple API.",
       "INACTIVE",
-      "Tweeco hit a max of 75K+ requests and was shut down due to twitter api being fully paid",
+      "Tweeco hit a max of 73K requests and was shut down due to twitter api being fully paid",
     ],
   ];
   const projectsSet2 = [
