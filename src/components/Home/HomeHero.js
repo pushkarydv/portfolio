@@ -7,7 +7,6 @@ export default function HomeHero() {
     "Designer 🎨",
     "<Developer />🧑‍💻",
     "Hobby Photograper 📷",
-    "Developer Advocate",
     "Figuring out life 🤔",
   ];
   const [text, setText] = useState(texts[0]);
