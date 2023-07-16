@@ -116,7 +116,7 @@ function HomeProjects() {
       </p>
 
       {projectsSet1.map((project) => (
-        <div className='flex flex-col-reverse md:flex-row jutify-center gap-4 p-4 rounded-md my-2'>
+        <div className='flex flex-col-reverse md:flex-row jutify-center gap-4 p-4 rounded-md my-2' key={project[0]}>
           <div className='w-full md:w-2/3'>
             <div className='text-2xl font-semibold underline'>{project[0]}</div>
             <div className='text-base'>{project[3]}</div>
@@ -150,7 +150,7 @@ function HomeProjects() {
           View More: A lot more
         </summary>
         {projectsSet2.map((project) => (
-          <div className='flex flex-col-reverse md:flex-row jutify-center gap-4 p-4 rounded-md my-2'>
+          <div className='flex flex-col-reverse md:flex-row jutify-center gap-4 p-4 rounded-md my-2'  key={project[0]}>
             <div className='w-full md:w-2/3'>
               <div className='text-2xl font-semibold underline'>
                 {project[0]}
