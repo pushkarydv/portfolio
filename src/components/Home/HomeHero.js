@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { CiInstagram, CiLinkedin, CiTwitter } from "react-icons/ci";
-import { PiGithubLogo } from "react-icons/pi";
+import { PiDownload, PiGithubLogo } from "react-icons/pi";
 export default function HomeHero() {
   const texts = [
     "Designer 🎨",
@@ -30,7 +30,11 @@ export default function HomeHero() {
     <div className='bg-neutral-800 py-[10vh] px-4 md:px-8 lg:px-[16%]'>
       <div className='py-4 flex flex-col md:flex-row items-center gap-4'>
         <div className='w-full md:w-1/2 flex justify-center items-center text-center'>
-          <img src='/aws-s3/pic.png' className='max-h-[45vh] md:max-h-[60vh]' alt='Pushkar&apos; Profile Pic with some boxes' />
+          <img
+            src='/aws-s3/pic.png'
+            className='max-h-[45vh] md:max-h-[60vh]'
+            alt="Pushkar' Profile Pic with some boxes"
+          />
         </div>
         <div className='w-full md:w-1/2 py-4'>
           <div className='bg-white p-8 outline outline-2 rounded-xl outline-neutral-900'>
@@ -80,7 +84,16 @@ export default function HomeHero() {
                 </a>
               )}
             </div>
+
             <p className='mt-4 font-mono'>😶‍🌫️ Have you heard Tere Naina?</p>
+            <a
+              rel='noopener noreferrer'
+              className='no-underline text-inherit hover:scale-95 transition-all flex flex-row gap-2 items-center bg-teal-800 text-neutral-50 w-fit py-2 px-4 rounded-lg mt-6'
+              target='_blank'
+              href='https://drive.google.com/file/d/189kzUrLgCO2v7sIJRI02ChWtjTXWdy3Z/view?usp=sharing'
+            >
+              Resume <PiDownload size={"1.5rem"} />
+            </a>
           </div>
         </div>
       </div>
