@@ -8,6 +8,9 @@
 # testing
 /coverage
 
+# auto creation files
+/package-lock.json
+
 # next.js
 /.next/
 /out/
