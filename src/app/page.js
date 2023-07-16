@@ -1,7 +1,24 @@
+import HomeAbout from "@/components/Home/HomeAbout";
+import HomeExperince from "@/components/Home/HomeExperince";
+import HomeFooter from "@/components/Home/HomeFooter";
+import HomeHero from "@/components/Home/HomeHero";
+import HomeProjects from "@/components/Home/HomeProjects";
+import HomeStats from "@/components/Home/HomeStats";
+
 export default function Home() {
   return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 text-4xl">
-        Pushkar Yadav
-      </main>
-  )
+    <main>
+      <div className='bg-neutral-800 text-teal-300 p-2'>
+        <div className='p-2 text-sm rounded-md border border-1 border-teal-300'>
+          Testing Version May have 1M+ bugs report at pushkar@pushkaryadav.in
+        </div>
+      </div>
+      <HomeHero />
+      <HomeAbout />
+      <HomeStats />
+      <HomeProjects />
+      <HomeExperince/>
+      <HomeFooter/>
+    </main>
+  );
 }
