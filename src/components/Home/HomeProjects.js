@@ -163,7 +163,7 @@ function HomeProjects() {
                 <div className='font-semibold text-black'>{project[5]}</div>
               )}
               <a
-                href={project[1] + "?ref=pushkaryadav.in"}
+                href={project[2] + "?ref=pushkaryadav.in"}
                 rel='noopener noreferrer'
                 className='no-underline text-white transition-all flex flex-row my-2 gap-2 items-center w-fit bg-black p-2 text-sm rounded-lg'
                 target='_blank'
