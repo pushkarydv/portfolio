@@ -1,12 +1,8 @@
 import React from "react";
+import { expreince } from "../../../data/experince";
+import { refrences } from "../../../data/links";
 
 function HomeExperince() {
-  const expreince = [
-    ["Software Engineering Intern", "Zura Ventures", "Apr 2023 - Present"],
-    ["Web Lead", "Google Developer Students Club", "Sep 2022 - Present"],
-    ["Open Source Developer", "HacktoberFest", "Oct 2022 - 1mo"],
-    ["SWE", "Cosmofeed", "Nov 2022 - Dec 2022"],
-  ];
   return (
     <div className='text-lime-950 bg-lime-200 py-[10vh] px-4 md:px-8 lg:px-[16%]'>
       <div className='text-4xl font-medium'>Experince</div>
@@ -18,7 +14,7 @@ function HomeExperince() {
         </div>
       ))}
       <a
-          href={"https://www.linkedin.com/in/pushkarydv" + "?ref=pushkaryadav.in"}
+          href={`https://www.linkedin.com/in/pushkarydv?ref=${refrences.website}`}
           rel='noopener noreferrer'
           className='text-center block text-inherit hover:scale-95 transition-all underline underline-offset-2 decoration-wavy font-semibold my-4'
           target='_blank'

@@ -10,15 +10,17 @@ export default function Home() {
     <main>
       <div className='bg-neutral-800 text-teal-300 p-2'>
         <div className='p-2 text-sm rounded-md border border-1 border-teal-300'>
-          Testing Version May have 1M+ bugs report at pushkar@pushkaryadav.in
+          Bugs everywhere 🪲
         </div>
       </div>
+
       <HomeHero />
       <HomeAbout />
       <HomeStats />
       <HomeProjects />
       <HomeExperince/>
       <HomeFooter/>
+      
     </main>
   );
 }
