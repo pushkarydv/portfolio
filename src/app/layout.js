@@ -1,8 +1,5 @@
-'use client';
-import { useEffect } from "react";
 import "./globals.css";
 import { Noto_Sans_Mono } from "next/font/google";
-import { initMessageGator } from "message-gator";
 
 const customFone = Noto_Sans_Mono({ subsets: ["latin"] });
 
@@ -13,9 +10,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  useEffect(()=>{
-    initMessageGator('485a5f50-1e3c-4f3b-942b-2cd7aa280f42')
-  })
   return (
     <html lang='en'>
       <head>
