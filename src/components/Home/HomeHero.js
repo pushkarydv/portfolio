@@ -71,7 +71,7 @@ export default function HomeHero() {
 
             </div>
 
-            <p className='mt-4 font-mono'>😶‍🌫️ Have you heard Tere Naina?</p>
+            <p className='mt-4 font-mono'>😶‍🌫️ Did you ever saw me and Batman at same place?</p>
 
             <a
               rel='noopener noreferrer'
