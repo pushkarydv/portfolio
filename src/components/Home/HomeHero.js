@@ -77,7 +77,7 @@ export default function HomeHero() {
               rel='noopener noreferrer'
               className='no-underline text-inherit hover:scale-95 transition-all flex flex-row gap-2 items-center bg-teal-800 text-neutral-50 w-fit py-2 px-4 rounded-lg mt-6'
               target='_blank'
-              href='https://drive.google.com/file/d/189kzUrLgCO2v7sIJRI02ChWtjTXWdy3Z/view?usp=sharing'
+              href='https://drive.google.com/file/d/1W1KVb13VJTWXu1R_AtTl06L7dFbTom_o/view?usp=sharing'
             >
               Resume <PiDownload size={"1.5rem"} />
             </a>
