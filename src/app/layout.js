@@ -25,7 +25,6 @@ export default function RootLayout({ children }) {
           content='Pushkar Yadav, pushkaryadavain,  pushkarydv'
         />
         <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
-        <meta name='language' content='English' />
         <meta name='author' content='Pushkar Yadav' />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https://pushkaryadav.in' />
