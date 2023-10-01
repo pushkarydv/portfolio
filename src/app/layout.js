@@ -14,7 +14,6 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <head>
         <meta charSet='UTF-8' />
-        <meta name='title' content='Puhskar yadav' />
         <meta name='title' content='Pushkar Yadav' />
         <meta
           name='description'
