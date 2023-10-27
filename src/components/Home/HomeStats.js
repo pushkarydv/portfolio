@@ -14,7 +14,7 @@ function HomeStats() {
     countries: "104+",
   };
   return (
-    <div className='bg-neutral-800 text-neutral-50 py-[10vh]  px-4 md:px-8 lg:px-[16%]'>
+    <div className='py-[10vh]  px-4 md:px-8 lg:px-[16%]'>
       <p className='text-2xl'>
         Wanna see projects? Go down, here are some stats to flex of
       </p>
@@ -26,7 +26,7 @@ function HomeStats() {
           href='https://www.producthunt.com/@pushkaryadav'
           rel='noopener noreferrer'
         >
-          <div className='bg-white text-neutral-950 m-1 rounded-md md:m-0 md:mr-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 hover:transition-all'>
+          <div className='border-2 text-black border-black m-1 rounded-xl md:m-0 md:mr-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:bg-black hover:text-white hover:transition-all'>
             <PiAppWindowLight size={"6rem"} />
             <p className='text-4xl font-semibold'>{stats.products}</p>
             <p className='text-xl text-center'>Products</p>
@@ -38,7 +38,7 @@ function HomeStats() {
           href='https://github.com/pushkarydv'
           rel='noopener noreferrer'
         >
-          <div className='bg-white text-neutral-950 m-1 rounded-md md:m-0 md:mx-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 hover:transition-all'>
+          <div className='border-2 text-black border-black m-1 rounded-xl md:m-0 md:mr-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:bg-black hover:text-white hover:transition-all'>
             <PiUsersThreeBold size={"6rem"} />
             <p className='text-4xl font-semibold'>{stats.users}</p>
             <p className='text-xl text-center'>Users</p>
@@ -50,7 +50,7 @@ function HomeStats() {
           href='https://www.pexels.com/@pushkaryadav'
           rel='noopener noreferrer'
         >
-          <div className='bg-white text-neutral-950 m-1 rounded-md md:m-0 md:mx-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 hover:transition-all'>
+          <div className='border-2 text-black border-black m-1 rounded-xl md:m-0 md:mr-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:bg-black hover:text-white hover:transition-all'>
             <PiCameraLight size={"6rem"} />
             <p className='text-4xl font-semibold'>{stats.photography}</p>
             <p className='text-xl text-center'>Clicks</p>
@@ -62,7 +62,7 @@ function HomeStats() {
           href='https://github.com/pushkarydv'
           rel='noopener noreferrer'
         >
-          <div className='bg-white text-neutral-950 m-1 rounded-md md:m-0 md:ml-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:translate-y-2 hover:translate-x-2 hover:transition-all'>
+          <div className='border-2 text-black border-black m-1 rounded-xl md:m-0 md:mr-4 p-4 md:py-8 gap-2 flex flex-col items-center justify-center hover:bg-black hover:text-white hover:transition-all'>
             <PiMapTrifoldLight size={"6rem"} />
             <p className='text-4xl font-semibold'>{stats.countries}</p>
             <p className='text-xl text-center'>Reached</p>

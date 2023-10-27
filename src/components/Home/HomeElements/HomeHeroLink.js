@@ -7,7 +7,7 @@ export const HomeHeroLink = (props) => {
     <a
       href={`${props.href}?ref=${refrences.website}`}
       rel='noopener noreferrer'
-      className='no-underline text-inherit hover:scale-95 transition-all'
+      className='no-underline p-1 border-2 border-white bg-white text-black  rounded-full transition-all active:scale-95'
       target='_blank'
     >
       {props.children}

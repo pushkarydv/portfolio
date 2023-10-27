@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Noto_Sans_Mono } from "next/font/google";
+import { Assistant } from "next/font/google";
 
-const customFone = Noto_Sans_Mono({ subsets: ["latin"] });
+const customFont = Assistant({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Pushkar Yadav",
@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html>
       <head>
         <meta charSet='UTF-8' />
         <meta name='title' content='Pushkar Yadav' />
@@ -66,7 +66,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={customFone.className}>{children}</body>
+      <body className={customFont.className}>{children}</body>
     </html>
   );
 }
