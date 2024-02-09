@@ -1,46 +1,36 @@
-# Pushkar Yadav
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Experienced open-source developer with a focus on user-centric applications and a proven track record of engaging a user base of 15,000+. Skilled in full-stack development, with advanced experience in application architecture. Proficient in Next.js and adept at collaborating with product and design teams to achieve common goals.
+## Getting Started
 
-**Portfolio:** [GitHub](https://github.com/pushkarydv) | [LinkedIn](https://www.linkedin.com/in/pushkarydv) | [Email](mailto:pushkaryadavin@gmail.com) | +918278622243
+First, run the development server:
 
-## EXPERIENCE
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-**Zura Ventures - Full Stack Intern**  
-*Apr 2023 - Aug 2023*  
-- Developed and maintained B2B Shopify apps, contributing to over $2 million in customer revenue.
-- Collaborated with a dedicated team to create highly-rated apps, demonstrating skills in full-stack development, bug fixing, and scalability.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-**Cosmofeed - Software Engineering Intern**  
-*Nov 2022 - Dec 2022*  
-- Contributed to pre-release bio link app website, enhancing user experience and gathering data on potential target customers.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-**Freelance & Personal Projects**  
-*Dec 2021 - Present*  
-- Created and maintained open-source apps with a user base of 15,000+, focusing on solving common technical problems and simplifying development tasks.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## PROJECTS
+## Learn More
 
-**Message Gator | [mg.pushkaryadav.in](https://mg.pushkaryadav.in)**
-- Developed a message widget integration tool using Next.js and React, showcasing expertise in scalable application design and frontend development.
+To learn more about Next.js, take a look at the following resources:
 
-**Web Searcher | [websearcher.pushkaryadav.in](https://websearcher.pushkaryadav.in)**
-- Created a meta tag generation tool using Next.js, demonstrating skills in web development and SEO optimization.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-*There are more projects available on [GitHub](https://github.com/pushkarydv) and [Portfolio](https://pushkaryadav.in).*
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## SKILLS
+## Deploy on Vercel
 
-NextJS • ReactJS • JavaScript • CSS • HTML • Markdown • TailwindCSS • Bootstrap • Materialize CSS • Firebase • SASS • UI/UX • NPM • Git GitHub • Node JS • MongoDB • Express JS
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Volunteering
-
-- Google DSC - Lead (Present): Leading a team in Google DSC, showcasing leadership and collaboration skills.
-- Pexels - Community Photographer (Present)
-- HacktoberFest - Repo Maintainer (1 mo.)
-
-## Achievements
-
-- Winner - Hackathon organized by Major League Hacking in June 2022.
-- 5th Product of the Day MDB ([mdb.pushkaryadav.in](https://mdb.pushkaryadav.in)) recognized by ProductHunt in March 2021.
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

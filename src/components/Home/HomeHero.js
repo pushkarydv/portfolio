@@ -1,76 +1,79 @@
-import React from 'react';
-
-import { socials } from '../../../data/links';
-import { about } from '../../../data/webconfig';
-
-import { HomeHeroLink } from './HomeElements/HomeHeroLink';
-
 import { CiInstagram, CiLinkedin, CiTwitter } from 'react-icons/ci';
 import { PiDownload, PiGithubLogo } from 'react-icons/pi';
+import React from 'react';
 
+const HomeHero = () => {
 
-export default function HomeHero() {
+  const socials = {
+    linkedin: 'https://www.linkedin.com/in/pushkarydv',
+    github: 'https://github.com/pushkarydv',
+    twitter: 'https://twitter.com/pushkaryadavin',
+    instagram: 'https://www.instagram.com/pushkaryadav_/',
+  };
+
+  const HomeHeroLink = (props) => {
+    return (
+      <a
+        href={`${props.href}?ref=pushkaryadav.in`}
+        rel='noopener noreferrer'
+        className='no-underline p-2 border-none shadow-sm shadow-black/20 text-black  rounded-full transition-all active:scale-95'
+        target='_blank'
+      >
+        {props.children}
+      </a>
+    );
+  };
+
   return (
-    <>
-      <div className='min-h-screen bg-[#0a0f19]'>
-        {/* Background Circle (Blur) */}
-        <div className='absolute right-1/4 translate-x-1/4 bottom-1/4 translate-y-1/4 rounded-full blur-3xl w-1/3 aspect-square bg-[#1a2232] -z-0'></div>
+    <section className='min-h-[90vh] bg-gradient-to-b from-fuchsia-100 via-pink-100 to-violet-100 flex justify-center items-center overflow-hidden'>
+      <a
+        rel='noopener noreferrer'
+        className='no-underline absolute top-4 right-4 text-inherit hover:scale-95 transition-all flex flex-row gap-2 items-center bg-white/40 text-black w-fit py-2 px-4 rounded-full shadow-md shadow-black/10 ring-2 ring-white/80 z-10'
+        target='_blank'
+        href='https://drive.google.com/file/d/1rSfX0BknGC1zyNHpUbLLSys9cNowlgeg/view?usp=drivesdk'
+      >
+        Resume <PiDownload size={'1.5rem'} />
+      </a>
+      <div className='absolute w-96 h-96 rounded-full bg-pink-100 blur-2xl -top-24 -left-24'></div>
+      <div className='pt-24 px-4 pb-4 md:px-8 md:pb-8 w-[90%] max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto border border-black/5 bg-white/40 shadow-md shadow-black/5 rounded-xl relative'>
+        <img
+          src='https://github.com/pushkarydv.png'
+          className='w-36 aspect-square rounded-full absolute -top-36 translate-y-1/2 left-1/2 -translate-x-1/2 ring-2 ring-white/30'
+          alt=''
+        />
+        <div className='font-serif text-3xl md:text-5xl font-bold text-violet-500/70 md:text-center'>
+          Hello I&apos;m Pushkar
+        </div>
+        <div className='text-black/60'>
+          Full Stack Web Developer with experience in UI/UX, Photography, and
+          blogging. I&apos;ve launched 16+ products, reaching users in 104+
+          countries, and I specialize in JavaScript, NextJS, and React.
+        </div>
 
-        {/* Background Grid Pattern */}
-        <div className='absolute top-0 left-0 min-h-screen w-full z-0 background-grid'></div>
+        <div
+          className='flex flex-row flex-wrap justify-start items-center gap-4 mt-4'
+          initial='hidden'
+          animate='visible'
+        >
+          <HomeHeroLink href={socials.github}>
+            <PiGithubLogo size={'2rem'} />
+          </HomeHeroLink>
 
-        {/* Hero Content */}
-        <div className='relative z-10 header-text'>
-          <div className='text-5xl pt-[10vh] lg:pt-[20vh] px-4 text-white lg:text-center lg:text-6xl font-semibold'>
-            <img
-              src='/images/profile.jpeg'
-              className='w-40 mx-auto rounded-full'
-              alt=''
-            />
-            Pushkar Yadav
-          </div>
+          <HomeHeroLink href={socials.linkedin}>
+            <CiLinkedin size={'2rem'} />
+          </HomeHeroLink>
 
-          <div className='text-xl my-2 max-w-5xl mx-auto px-4 text-white lg:text-center'>
-            {about?.content}
-          </div>
-          <div className='flex flex-row px-4 sm:justify-center items-center gap-4 my-4'>
-            {socials.github != '' && (
-              <HomeHeroLink href={socials.github}>
-                <PiGithubLogo size={'2rem'} />
-              </HomeHeroLink>
-            )}
+          <HomeHeroLink href={socials.instagram}>
+            <CiInstagram size={'2rem'} />
+          </HomeHeroLink>
 
-            {socials.linkedin != '' && (
-              <HomeHeroLink href={socials.linkedin}>
-                <CiLinkedin size={'2rem'} />
-              </HomeHeroLink>
-            )}
-
-            {socials.instagram != '' && (
-              <HomeHeroLink href={socials.instagram}>
-                <CiInstagram size={'2rem'} />
-              </HomeHeroLink>
-            )}
-
-            {socials.twitter != '' && (
-              <HomeHeroLink href={socials.twitter}>
-                <CiTwitter size={'2rem'} />
-              </HomeHeroLink>
-            )}
-          </div>
-
-          <div className='p-4 text-base text-white flex flex-row flex-wrap items-center gap-2 sm:justify-center'>
-            <a
-              rel='noopener noreferrer'
-              className='no-underline text-inherit hover:scale-95 transition-all flex flex-row gap-2 items-center bg-sky-500 text-neutral-50 w-fit py-2 px-4 rounded-lg'
-              target='_blank'
-              href='https://drive.google.com/file/d/1rSfX0BknGC1zyNHpUbLLSys9cNowlgeg/view?usp=drivesdk'
-            >
-              Resume <PiDownload size={'1.5rem'} />
-            </a>
-          </div>
+          <HomeHeroLink href={socials.twitter}>
+            <CiTwitter size={'2rem'} />
+          </HomeHeroLink>
         </div>
       </div>
-    </>
+    </section>
   );
-}
+};
+
+export default HomeHero;
