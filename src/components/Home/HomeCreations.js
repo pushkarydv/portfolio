@@ -173,7 +173,7 @@ const HomeCreations = () => {
         />
       ))}
       <details>
-        <summary className='w-fit mx-auto bg-white border text-xl list-none cursor-pointer py-2 px-4 rounded-lg'>
+        <summary className='w-fit mx-auto bg-white border text-lg cursor-pointer py-2 px-4 rounded-lg'>
           View More Products: A lot more
         </summary>
 
