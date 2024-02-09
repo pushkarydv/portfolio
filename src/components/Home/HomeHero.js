@@ -37,11 +37,11 @@ const HomeHero = () => {
       <div className='absolute w-96 h-96 rounded-full bg-pink-100 blur-2xl -top-24 -left-24'></div>
       <div className='pt-24 px-4 pb-4 md:px-8 md:pb-8 w-[90%] max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto border border-black/5 bg-white/40 shadow-md shadow-black/5 rounded-xl relative'>
         <img
-          src='https://github.com/pushkarydv.png'
+          src='/images/profile.jpeg'
           className='w-36 aspect-square rounded-full absolute -top-36 translate-y-1/2 left-1/2 -translate-x-1/2 ring-2 ring-white/30'
           alt=''
         />
-        <div className='font-serif text-3xl md:text-5xl font-bold text-violet-500/70 md:text-center'>
+        <div className='font-serif text-3xl md:text-5xl font-bold text-violet-900/60 md:text-center'>
           Hello I&apos;m Pushkar
         </div>
         <div className='text-black/60'>
