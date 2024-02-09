@@ -3,7 +3,6 @@ import { PiDownload, PiGithubLogo } from 'react-icons/pi';
 import React from 'react';
 
 const HomeHero = () => {
-
   const socials = {
     linkedin: 'https://www.linkedin.com/in/pushkarydv',
     github: 'https://github.com/pushkarydv',
@@ -25,7 +24,7 @@ const HomeHero = () => {
   };
 
   return (
-    <section className='min-h-[90vh] bg-gradient-to-b from-fuchsia-100 via-pink-100 to-violet-100 flex justify-center items-center overflow-hidden'>
+    <section className='min-h-[90vh] py-[25vh] lg:py-[10vh] bg-gradient-to-b from-fuchsia-100 via-pink-100 to-violet-100 flex justify-center items-center overflow-hidden'>
       <a
         rel='noopener noreferrer'
         className='no-underline absolute top-4 right-4 text-inherit hover:scale-95 transition-all flex flex-row gap-2 items-center bg-white/40 text-black w-fit py-2 px-4 rounded-full shadow-md shadow-black/10 ring-2 ring-white/80 z-10'
