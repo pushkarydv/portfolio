@@ -40,13 +40,18 @@ const HomeHero = () => {
           className='w-36 aspect-square rounded-full absolute -top-36 translate-y-1/2 left-1/2 -translate-x-1/2 ring-2 ring-white/30'
           alt=''
         />
-        <div className='font-serif text-3xl md:text-5xl font-bold text-violet-900/60 md:text-center'>
-          Hello I&apos;m Pushkar
-        </div>
-        <div className='text-black/60'>
-          Full Stack Web Developer with experience in UI/UX, Photography, and
-          blogging. I&apos;ve launched 16+ products, reaching users in 104+
-          countries, and I specialize in JavaScript, NextJS, and React.
+        <div className='text-black/80'>
+          Hey there! <br />
+          I'm{' '}
+          <span className='text-violet-900/80 font-serif font-bold'>
+            Pushkar Yadav
+          </span>
+          , a developer, idea generator, and product enthusiast. I've launched
+          over 20+ products, reaching 25k+ users across 104+ countries. My
+          expertise lies in JavaScript, NextJS, React. From conceptualization to
+          launch, I prioritize SEO, loading speed, and user experience. Outside
+          of coding, I share my tech insights through blogging and capture
+          moments as a photographer.
         </div>
 
         <div
