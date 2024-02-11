@@ -42,11 +42,11 @@ const HomeHero = () => {
         />
         <div className='text-black/80'>
           Hey there! <br />
-          I'm{' '}
+          I&apos;m{' '}
           <span className='text-violet-900/80 font-serif font-bold'>
             Pushkar Yadav
           </span>
-          , a developer, idea generator, and product enthusiast. I've launched
+          , a developer, idea generator, and product enthusiast. I&apos;ve launched
           over 20+ products, reaching 25k+ users across 104+ countries. My
           expertise lies in JavaScript, NextJS, React. From conceptualization to
           launch, I prioritize SEO, loading speed, and user experience. Outside
