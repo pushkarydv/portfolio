@@ -29,7 +29,7 @@ const HomeHero = () => {
         rel='noopener noreferrer'
         className='no-underline absolute top-4 right-4 text-inherit hover:scale-95 transition-all flex flex-row gap-2 items-center bg-white/40 text-black w-fit py-2 px-4 rounded-full shadow-md shadow-black/10 ring-2 ring-white/80 z-10'
         target='_blank'
-        href='https://drive.google.com/file/d/1rSfX0BknGC1zyNHpUbLLSys9cNowlgeg/view?usp=drivesdk'
+        href='https://pushkarydv.github.io/pushkarydv/resume.pdf'
       >
         Resume <PiDownload size={'1.5rem'} />
       </a>
