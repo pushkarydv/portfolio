@@ -10,7 +10,7 @@ export default function NotFound() {
           you&apos;ve mistyped the URL? Be sure to check your spelling.
         </p>
         <img 
-        src="/aws-s3/404.png" 
+        src="/bucket/404.png" 
         className="w-full object-contain" 
         alt="not-found" 
         />

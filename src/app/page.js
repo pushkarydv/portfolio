@@ -1,121 +1,21 @@
 import React from "react";
 
-import { CiInstagram, CiLinkedin, CiTwitter } from "react-icons/ci";
 import { PiGithubLogo } from "react-icons/pi";
+import { CiInstagram, CiLinkedin, CiTwitter } from "react-icons/ci";
+
+import { products, socials, tests } from "@/utils/data";
 
 const WhatIBring = () => {
   const ExternalLink = ({ children, href }) => (
     <a
       href={href}
-      className="text-orange-500 underline-offset-2 underline hover:text-orange-600 transition-colors"
+      className="text-orange-600 font-medium underline-offset-2 underline hover:tracking-widest transition-all"
       rel="noopener noreferrer"
       target="_blank"
     >
-      {children}
+      {children} &#10548;
     </a>
   );
-  const products = [
-    [
-      "Mernifier",
-      "https://mernifier.itsvg.in",
-      "Trained on the latest data, it's your ultimate companion for daily development tasks.It elevates your development game. Generate test cases, squash bugs, and autocomplete efficiently. Trained on the latest data. Your go-to for MERN mastery!",
-      "ACTIVE",
-      "",
-    ],
-
-    [
-      "Anomm",
-      "https://anomm.pushkaryadav.in",
-      "Anomm is a free service to deliver anonymous messages directly to your telegram via bot. this can be integrated anywhere community reviews, confession pages, personal thoughts and a lot more.",
-      "ACTIVE",
-      "",
-    ],
-    [
-      "Tweeco",
-      "https://tweeco.pushkaryadav.in",
-      "Tweets ✒️ shouldn't be limited to twitter🐧 : Let's integrate them anywhere fully rendered✨ with this simple API.",
-      "INACTIVE",
-      "Tweeco hit a max of 73K requests and was shut down due to twitter api being fully paid",
-    ],
-
-    [
-      "Markdown Badges",
-      "https://mdb.pushkaryadav.in",
-      "Super Cool SVG based Badges for your products - Socials/ Languages/ Frameworks/ Libraries and more. Get generated markdown code, preview and a change badge style within single click",
-      "ACTIVE",
-      "",
-    ],
-    [
-      "IBOX",
-      "https://ibox.pushkaryadav.in",
-      "All in one solution for your all needs of insta. Download Posts, Reels, IGTV videos and analyze any public profile for its followers, following, rand and a whole lot of data.",
-      "INACTIVE",
-      "API Failure! Will fix as soon as i get time",
-    ],
-    [
-      "NextOS",
-      "https://nextos.pushkaryadav.in",
-      "A Modern Operating System design built into a Website using Next JS and Tailwind CSS.",
-      "ACTIVE",
-      "",
-    ],
-    [
-      "Payon",
-      "https://payon.pushkaryadav.in",
-      "Payon is a template website to show you a better approach of making payments having a simple and interactive interface.This is a prototype website",
-      "ACTIVE",
-      "",
-    ],
-    [
-      "SummerX",
-      "https://summerx.itsvg.in",
-      "Through SummerX we are on a mission 🚀 to save lives of people who suffer from heat waves 🍃, excessive heat 🥵, illness and more. This is a prototype website.",
-      "ACTIVE",
-      "",
-    ],
-    [
-      "APIX",
-      "https://apix.pushkaryadav.in",
-      "APIX - a collection of 1400+ apis and 50+ categories of api's",
-      "ACTIVE",
-      "",
-    ],
-    [
-      "COLPIC",
-      "https://colpic.pushkaryadav.in",
-      "Find Perfect colors, gradients and more for your Amazing products, Posters or Designs, Just copy and paste in single click.",
-      "ACTIVE",
-      "",
-    ],
-    [
-      "Web Games",
-      "https://wg.pushkaryadav.in",
-      "Play some of the on the go games in a minimal way",
-      "ACTIVE",
-      "",
-    ],
-    [
-      "PRM",
-      "https://prm.pushkaryadav.in",
-      "Create amazing readme for your products, profile from amazing templates and custom too without writing markdown. Explaining everything Screenshots, URL , About, Insights, Local System Guides and a lot more.",
-      "ACTIVE",
-      "",
-    ],
-    [
-      "Web Searcher",
-      "https://websearcher.pushkaryadav.in",
-      "Generate meta tags in some clicks and Rank top in search engines.You can generate Open graph, twitter and basic meta tags just in one click and a lot of adjustments in them.",
-      "ACTIVE",
-      "",
-    ],
-  ];
-
-  const socials = {
-    linkedin: "https://www.linkedin.com/in/pushkarydv",
-    github: "https://github.com/pushkarydv",
-    twitter: "https://twitter.com/pushkaryadavin",
-    instagram: "https://www.instagram.com/pushkaryadav_/",
-  };
 
   const HomeHeroLink = ({ href, children }) => (
     <a
@@ -135,6 +35,7 @@ const WhatIBring = () => {
   return (
     <main className="bg-gray-50 text-gray-800 min-h-screen p-6 md:p-12 lg:p-16">
       <div className="max-w-4xl mx-auto">
+        {/* Header */}
         <div className="flex flex-col-reverse md:flex-row items-start justify-between gap-8 mb-12">
           <div>
             <h1 className="text-3xl font-bold mb-4">
@@ -152,9 +53,11 @@ const WhatIBring = () => {
             src="https://github.com/pushkarydv.png"
             className="w-40 h-40 rounded-lg shadow-lg ring-2 ring-gray-300"
             alt="Pushkar Yadav"
+            loading="lazy"
           />
         </div>
 
+        {/* What i Built */}
         <section className="mb-12">
           <SectionTitle>Few Things I&apos;ve Built</SectionTitle>
           <ul className="space-y-4 ml-6 list-disc">
@@ -201,7 +104,7 @@ const WhatIBring = () => {
           </ul>
 
           <details className="mt-6">
-            <summary className="text-orange-500 underline cursor-pointer font-semibold">
+            <summary className="text-orange-600 underline cursor-pointer font-semibold">
               View all others
             </summary>
             <ul className="list-disc ml-6 mt-4 space-y-3">
@@ -216,8 +119,34 @@ const WhatIBring = () => {
               ))}
             </ul>
           </details>
+
+          <details className="mt-6">
+            <summary className="text-orange-600 underline cursor-pointer font-semibold">
+              currently testing out
+            </summary>
+            <ul className="list-disc ml-6 mt-4 space-y-3">
+              {tests.map((item, index) => (
+                <li key={index}>
+                  <ExternalLink href={item[1]}>{item[0]}</ExternalLink>
+                  <p className="mt-1">{item[2]}</p>
+                  {item[3] !== "ACTIVE" && (
+                    <p className="text-red-500 mt-1">
+                      {item[3]} : {item[4]}
+                    </p>
+                  )}
+                </li>
+              ))}
+            </ul>
+            <br />A lot of tests are never released but cool to use ,you can
+            check them out at my {" "}
+            <ExternalLink href={socials.linkedin}>linkedin</ExternalLink>
+            {" / "}
+            <ExternalLink href={socials.twitter}>twitter</ExternalLink>
+            {" "}posts and contect me if you need them.
+          </details>
         </section>
 
+        {/* Achievments */}
         <section className="mb-12">
           <SectionTitle>
             Numbers and Achievements I&apos;m Proud Of
@@ -263,11 +192,12 @@ const WhatIBring = () => {
           </ul>
         </section>
 
+        {/* Exp */}
         <section className="mb-12">
           <SectionTitle>Experience</SectionTitle>
           <ul className="space-y-6">
             <li>
-              <span className="text-orange-500"> Zura Ventures</span> India /
+              <span className="text-orange-600"> Zura Ventures</span> India /
               Remote
               <br />
               Full Stack Intern (Apr 2023 - Aug 2023)
@@ -286,7 +216,7 @@ const WhatIBring = () => {
               </ul>
             </li>
             <li>
-              <span className="text-orange-500">Cosmofeed</span> India / Remote
+              <span className="text-orange-600">Cosmofeed</span> India / Remote
               <br />
               Software Engineering Intern (Nov 2022 - Dec 2022)
               <br />
@@ -298,7 +228,7 @@ const WhatIBring = () => {
               </ul>
             </li>
             <li>
-              <span className="text-orange-500">
+              <span className="text-orange-600">
                 Open-Source & Personal Projects{" "}
               </span>
               <br />
@@ -317,7 +247,7 @@ const WhatIBring = () => {
               </ul>
             </li>
             <li>
-              <span className="text-orange-500"> Volunteering</span> On-Site
+              <span className="text-orange-600"> Volunteering</span> On-Site
               <br />
               Various Roles (Dec 2021 - Present)
               <br />
@@ -333,6 +263,7 @@ const WhatIBring = () => {
           </ul>
         </section>
 
+        {/* Skills  */}
         <section className="mb-12">
           <SectionTitle>Skills</SectionTitle>
           <div className="space-y-4">
@@ -360,6 +291,7 @@ const WhatIBring = () => {
           </div>
         </section>
 
+        {/* Contact */}
         <section className="mb-12">
           <SectionTitle>Contact Me</SectionTitle>
           <div className="flex flex-col md:flex-row gap-8">
@@ -379,11 +311,13 @@ const WhatIBring = () => {
                 </HomeHeroLink>
               </div>
             </div>
+            {/* Iframe built from Message Gator Widget (build yours: https://mg.writewrap.in/) */}
             <div className="w-full md:w-1/2">
               <iframe
                 src="https://mg.writewrap.in/widget/clrbyc3ie0000j8lc9zdhosjk"
                 className="w-full min-h-[32rem] border-0 rounded-lg ring-1 ring-black/10 "
                 title="Contact Form"
+                loading="lazy"
               />
             </div>
           </div>
