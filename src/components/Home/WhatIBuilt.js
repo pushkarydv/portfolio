@@ -1,5 +1,6 @@
 import React from "react";
-import { products, tests } from "@/utils/data";
+
+import { products, socials, tests } from "@/utils/data";
 import { ExternalLink, SectionTitle } from "../elements/basics";
 
 export default function WhatIBuilt() {

@@ -1,4 +1,5 @@
 import React from "react";
+
 import { ExternalLink } from "../elements/basics";
 
 export default function HeroSection() {
@@ -16,7 +17,7 @@ export default function HeroSection() {
       </div>
       <img
         src="https://github.com/pushkarydv.png"
-        className="w-40 h-40 rounded-lg shadow-lg ring-2 ring-gray-300"
+        className="w-40 aspect-square bg-gray-200 rounded-lg shadow-sm ring-2 ring-gray-300"
         alt="Pushkar Yadav"
         loading="lazy"
       />
