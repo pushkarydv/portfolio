@@ -30,7 +30,7 @@ export default function Contact() {
         {/* Iframe built from Message Gator Widget (build yours: https://mg.writewrap.in/) */}
         <div className="w-full md:w-1/2">
           <iframe
-            src="https://mg.writewrap.in/widget/clrbyc3ie0000j8lc9zdhosjk"
+            src="https://mg.writewrap.in/widget/clrbyc3ie0000j8lc9zdhosjk?message=Can%20you%20help%20me%20build%20XYZ"
             className="w-full min-h-[32rem] border-0 rounded-lg ring-1 ring-black/10 "
             title="Contact Form"
             loading="lazy"
