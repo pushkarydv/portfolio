@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property='og:image'
-          content='https://pushkaryadav.in/banner.png'
+          content='https://pushkaryadav.in/banner.jpg'
         />
         <meta property='twitter:card' content='summary_large_image' />
         <meta property='twitter:url' content='https://pushkaryadav.in' />
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
         />
         <meta
           property='twitter:image'
-          content='https://pushkaryadav.in/banner.png'
+          content='https://pushkaryadav.in/banner.jpg'
         />
         <link rel='icon' href='/logo.png' />
         {/* Google Analytics */}
