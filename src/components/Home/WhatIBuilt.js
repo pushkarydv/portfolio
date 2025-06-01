@@ -63,8 +63,8 @@ export default function WhatIBuilt() {
       </details>
 
       <details className="mt-6">
-        <summary className="text-orange-600 underline cursor-pointer font-semibold">
-          currently testing out
+        <summary className="text-green-600 underline cursor-pointer font-semibold">
+          Not So Prod (but interesting approaches)
         </summary>
         <ul className="list-disc ml-6 mt-4 space-y-3">
           {tests.map((item, index) => (

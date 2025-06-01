@@ -8,9 +8,8 @@ export default function Achievements() {
       <ul className="list-disc ml-6 space-y-3">
         <li>~ 20+ total products made.</li>
         <li>~ 25k+ users using my products.</li>
-        <li>~ 100k requests per month on server.</li>
         <li>
-          ~ 350k+ views on pexels community photos and being used in news
+          ~ 500k+ views on pexels community photos and being used in news
           articles like indiatimes.
         </li>
         <li>

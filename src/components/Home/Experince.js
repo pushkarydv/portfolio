@@ -5,9 +5,24 @@ export default function Experince() {
   return (
     <section className="mb-12">
       <SectionTitle>Experience</SectionTitle>
-      <ul className="space-y-6">
+      <ul className="space-y-6 text">
         <li>
-          <span className="text-orange-600"> Zura Ventures</span> India / Remote
+          <span className="text-orange-600"> Stealth Startup</span> <span className="text-sm ml-1">(Remote)</span>
+          <br />
+          Full Stack Web & AI Engineer (Dec 2024 - Present)
+          <br />
+          <ul className="list-disc ml-5">
+            <li>
+              Developed end to end data scraping and storage solution, with capability to run on millions of parameters everyday. <br />
+              Built internal dashboards and tools to label, showcase and perform various operations on custom datasets.
+            </li>
+            <li>
+              Building prediction system to tag certain domain data with highest precision in industry.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span className="text-orange-600"> Zura Ventures</span> <span className="text-sm ml-1">(India / Remote)</span>
           <br />
           Full Stack Intern (Apr 2023 - Aug 2023)
           <br />
@@ -25,7 +40,7 @@ export default function Experince() {
           </ul>
         </li>
         <li>
-          <span className="text-orange-600">Cosmofeed</span> India / Remote
+          <span className="text-orange-600">Cosmofeed</span> <span className="text-sm ml-1">(India / Remote)</span>
           <br />
           Software Engineering Intern (Nov 2022 - Dec 2022)
           <br />
@@ -56,7 +71,7 @@ export default function Experince() {
           </ul>
         </li>
         <li>
-          <span className="text-orange-600"> Volunteering</span> On-Site
+          <span className="text-orange-600"> Volunteering</span> <span className="text-sm ml-1">(On-Site)</span>
           <br />
           Various Roles (Dec 2021 - Present)
           <br />

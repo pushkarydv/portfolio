@@ -95,13 +95,27 @@ export const products = [
 ];
 
 export const tests = [
-    [
-        "Chat:ft-pushkar",
-        "http://tw-pushkaryadavin-chat.vercel.app/",
-        "Fine tuned gpt-4o-mini on my public interaction data via a custom tool to scrap, fix and remove clutter like usernames links to create a perfect replier for my chat.",
-        "RES",
-        " I don't tweet a lot so the data was pretty low and model isn't that accurate but good then pure gpt (~97k training tokens)",
-      ],
+  [
+    "x/pushkaryadavin Chat : fine tuned gpt-4o-mini",
+    "http://tw-pushkaryadavin-chat.vercel.app/",
+    "Fine tuned gpt-4o-mini on my public interaction data via a custom tool to scrap, fix and remove clutter like usernames links to create a perfect replier for my chat.",
+    "RES",
+    " I don't tweet a lot so the data was pretty low and model isn't that accurate but good then pure gpt (~97k training tokens)",
+  ],
+  [
+    "Memory in Images",
+    "https://memory-in-images.vercel.app/",
+    "Search within your images using natural language. Upload images, automatically analyze them with AI, and search through them using conversational queries like 'hiking on a mountain with cows' or 'when I was fat'.",
+    "ACTIVE",
+    "",
+  ],
+  [
+    "Video Memory",
+    "https://video-memory.vercel.app/",
+    "Video memory remembers moments of videos form millions of these and can directly search for any video from a single moment.",
+    "ACTIVE",
+    "",
+  ]
 ];
 
 export const socials = {
