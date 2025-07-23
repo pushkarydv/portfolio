@@ -1,56 +1,57 @@
 import {
-  GithubIcon,
-  InstagramIcon,
-  LinkedinIcon,
-  TwitterIcon,
+    GithubIcon,
+    InstagramIcon,
+    LinkedinIcon,
+    TwitterIcon,
 } from 'lucide-react';
 import { Alert, AlertTitle } from '@/components/ui/alert';
 import Link from 'next/link';
 
 export function HomeHeader() {
-return (
-    <div className='w-full max-w-xl mx-auto p-4'>
-        <Alert>
-            <AlertTitle
-                className='w-full flex items-center gap-4 justify-between'
-            >
-                <span>Hi there visitor! 👋</span>
-                <span className='flex gap-2'>
-                    <Link
-                        href='https://www.linkedin.com/in/pushkarydv'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='hover:bg-accent/40 p-1 rounded-md transition-colors'
-                    >
-                        <LinkedinIcon size={20} />
-                    </Link>
-                    <Link
-                        href='https://github.com/pushkarydv'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='hover:bg-accent/40 p-1 rounded-md transition-colors'
-                    >
-                        <GithubIcon size={20} />
-                    </Link>
-                    <Link
-                        href='https://twitter.com/pushkaryadavin'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='hover:bg-accent/40 p-1 rounded-md transition-colors'
-                    >
-                        <TwitterIcon size={20} />
-                    </Link>
-                    <Link
-                        href='https://www.instagram.com/pushkaryadav_/'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='hover:bg-accent/40 p-1 rounded-md transition-colors'
-                    >
-                        <InstagramIcon size={20} />
-                    </Link>
-                </span>
-            </AlertTitle>
-        </Alert>
-    </div>
-);
+    return (
+        <div className="absolute top-0 left-0 right-0 z-10 w-full max-w-2xl mx-auto p-4">
+            <Alert>
+                <AlertTitle className="flex items-center justify-between gap-4">
+                    <span className="text-lg font-medium">Hi there visitor! 👋</span>
+                    <div className="flex gap-3">
+                        {socialLinks.map(({ href, Icon, label }) => (
+                            <Link
+                                key={label}
+                                href={href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-1 rounded-md transition-colors hover:bg-accent/40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
+                                aria-label={label}
+                            >
+                                <Icon size={20} />
+                            </Link>
+                        ))}
+                    </div>
+                </AlertTitle>
+            </Alert>
+        </div>
+    );
 }
+
+const socialLinks = [
+    {
+        href: 'https://www.linkedin.com/in/pushkarydv',
+        Icon: LinkedinIcon,
+        label: 'LinkedIn',
+    },
+    {
+        href: 'https://github.com/pushkarydv',
+        Icon: GithubIcon,
+        label: 'GitHub',
+    },
+    {
+        href: 'https://twitter.com/pushkaryadavin',
+        Icon: TwitterIcon,
+        label: 'Twitter',
+    },
+    {
+        href: 'https://www.instagram.com/pushkaryadav_/',
+        Icon: InstagramIcon,
+        label: 'Instagram',
+    },
+];
