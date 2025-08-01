@@ -1,13 +1,20 @@
 import { BorderBox } from './border-box';
 
+const forcedLoadTailwind = [
+  'border-emerald-300',
+  'border-fuchsia-300',
+  'border-amber-300',
+  'border-teal-300', 
+  'border-sky-300',
+]
+
 const experiences = [
   {
-    title: 'Stealth Startup / Web & AI Engineer',
+    title: 'Frautect / Web & AI Engineer',
     duration: 'Dec 2024 - Present',
     description: `
-      Developed end-to-end data scraping and storage solution, with capability to run on millions of parameters every day. 
-      Built internal dashboards and tools to label, showcase, and perform various operations on custom datasets. 
-      Building prediction system to tag certain domain data with highest precision in the industry.
+      Developed end-to-end data scraping and storage solution, with capability to run on millions of parameters every day. Built internal dashboards and tools to label, showcase, and perform various operations on custom datasets. 
+      Building prediction system for Brand Protection at scale.
     `,
     borderColor: 'emerald-300',
   },
@@ -54,9 +61,9 @@ const experiences = [
 function ExperienceItem({ title, duration, description, borderColor }) {
   return (
     <div className="py-4 mb-6">
-      <div className={`border-l-4 border-${borderColor} text-2xl font-semibold pl-6`}>{title}</div>
-      <div className="text-sm text-gray-500 mt-1 pl-6">{duration}</div>
-      <div className="text-base mt-3 text-gray-700 leading-relaxed whitespace-pre-line pl-6">
+      <div className={`border-l-4 border-${borderColor} text-2xl font-semibold px-6`}>{title} <br />
+      <span className="text-sm text-gray-500">{duration}</span></div>
+      <div className="text-base text-gray-700 leading-relaxed whitespace-pre-line px-6">
         {description}
       </div>
     </div>

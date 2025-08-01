@@ -15,6 +15,13 @@ function MessageSectionBase() {
   return (
     <div className='w-full p-4'>
       <div className='grid grid-cols-1 md:grid-cols-2'>
+        <div className='flex justify-center items-center h-full font-serif font-bold md:text-lg text-left'>
+          <p>
+            <span className='text-xl md:text-4xl'>☃️</span> <br /> Loved my
+            work? <br /> or anything else to discuss.. <br /> Just drop me a
+            message
+          </p>
+        </div>
         <Tabs defaultValue='message'>
           <TabsList className='w-full'>
             <TabsTrigger value='message'>Message</TabsTrigger>
