@@ -1,5 +1,5 @@
 import { AchievementsSection } from '@/components/wrappers/achievements-section';
-import { ExperinceSection } from '@/components/wrappers/experince-section';
+import { ExperienceSection } from '@/components/wrappers/experince-section';
 import FooterSection from '@/components/wrappers/footer-section';
 import { HeroSection } from '@/components/wrappers/hero-section';
 import { HomeHeader } from '@/components/wrappers/home-header';
@@ -11,7 +11,7 @@ export default function Home() {
     <div className='relative'>
       <HomeHeader />
       <HeroSection />
-      <ExperinceSection />
+      <ExperienceSection />
       <ProjectsSection />
       <AchievementsSection />
       <MessageSection />

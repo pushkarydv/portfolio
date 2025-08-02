@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { BorderBox } from './border-box';
 
 export function HeroSection() {
@@ -14,8 +15,17 @@ export function HeroSection() {
       </div>
       <div className='border-l-2 mt-2 pl-4 text-xl mb-4'>
         I&apos;m a Software Engineer building Cool User Interfaces and AI
-        Experiments with everything in between.
+        Experiments with everything in between. <br />
+         <Link
+        href='https://pushkarydv.github.io/pushkarydv/resume.pdf'
+        target='_blank'
+        rel='noopener noreferrer'
+        className='underline text-base'
+      >
+        Get Resume
+      </Link>
       </div>
+     
     </BorderBox>
   );
 }

@@ -70,10 +70,10 @@ function ExperienceItem({ title, duration, description, borderColor }) {
   );
 }
 
-export function ExperinceSection() {
+export function ExperienceSection() {
   return (
     <BorderBox joinBottom={true} joinTop={true}>
-      <div className="px-6 text-4xl font-extrabold my-6">Experience</div>
+      <div className="px-6 text-3xl font-bold my-6">Experience</div>
       <div className="space-y-6">
         {experiences.map((exp, index) => (
           <ExperienceItem key={index} {...exp} />
