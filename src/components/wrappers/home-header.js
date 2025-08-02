@@ -20,7 +20,7 @@ export function HomeHeader() {
                                 href={href}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="p-1 rounded-md transition-colors hover:bg-accent/40 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent"
+                                className="p-1 rounded-md transition-colors hover:bg-accent/40 active:scale-95 ease-in-out"
                                 aria-label={label}
                             >
                                 <Icon size={20} />

@@ -16,7 +16,7 @@ function MessageSectionBase() {
     <div className='w-full p-4'>
       <div className='grid grid-cols-1 md:grid-cols-2'>
         <div className='flex justify-center items-center h-full font-serif font-bold md:text-lg text-left'>
-          <p>
+          <p className='py-12 md:py-0'>
             <span className='text-xl md:text-4xl'>☃️</span> <br /> Loved my
             work? <br /> or anything else to discuss.. <br /> Just drop me a
             message
@@ -66,7 +66,7 @@ function MessageSectionBase() {
 export function MessageSection() {
   return (
     <>
-      <BorderBox joinTop={true} joinBottom={false}>
+      <BorderBox joinTop={true}>
         <MessageSectionBase />
       </BorderBox>
     </>

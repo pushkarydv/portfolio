@@ -55,7 +55,7 @@ const achievements = [
 const ExternalLink = ({ children, href }) => (
   <a
     href={href}
-    className='text-orange-600 font-medium underline-offset-2 underline hover:tracking-widest transition-all'
+    className='text-primary-600 font-medium underline-offset-2 underline hover:tracking-widest transition-all'
     rel='noopener noreferrer'
     target='_blank'
   >

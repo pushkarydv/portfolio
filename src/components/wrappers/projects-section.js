@@ -157,7 +157,7 @@ const experimentalProjects = [
 const ExternalLink = ({ children, href }) => (
   <a
     href={href}
-    className='text-orange-600 font-medium underline-offset-2 underline hover:tracking-widest transition-all'
+    className='text-primary-600 font-semibold underline-offset-2 underline hover:tracking-widest transition-all'
     rel='noopener noreferrer'
     target='_blank'
   >
@@ -175,12 +175,12 @@ const ProjectItem = ({ project }) => (
       </p>
     )}
     {project.status === 'INACTIVE' && project.inactiveReason && (
-      <p className='text-red-500 mt-1 text-sm'>
+      <p className='text-secondary-500 mt-1 text-sm'>
         Inactive: {project.inactiveReason}
       </p>
     )}
     {project.status === 'RES' && project.note && (
-      <p className='text-red-500 mt-1 text-sm'>
+      <p className='text-secondary-500 mt-1 text-sm'>
         {project.status} : {project.note}
       </p>
     )}
@@ -190,14 +190,14 @@ const ProjectItem = ({ project }) => (
 // Collapsible section component
 const CollapsibleSection = ({
   title,
-  titleColor = 'orange-600',
+  titleColor = 'primary-600',
   projects,
   children,
   defaultOpen = false,
 }) => (
   <details className='mt-6' open={defaultOpen}>
     <summary
-      className={`text-${titleColor} underline cursor-pointer font-semibold hover:tracking-wider transition-all`}
+      className={`text-${titleColor} font-bold underline cursor-pointer hover:tracking-wider transition-all`}
     >
       {title}
     </summary>
@@ -228,7 +228,7 @@ function ProjectsSectionBase() {
       {/* All other projects */}
       <CollapsibleSection
         title='View all others'
-        titleColor='orange-600'
+        titleColor='primary-800'
         projects={allProjects}
         defaultOpen={false}
       />
