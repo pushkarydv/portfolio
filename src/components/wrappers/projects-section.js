@@ -215,7 +215,7 @@ function ProjectsSectionBase() {
     <div className='px-6 py-8'>
       {/* Main section title */}
       <h2 className='text-4xl font-extrabold mb-8 text-gray-800'>
-        Few Things I've Built
+        Few Things I&apos;ve Built
       </h2>
 
       {/* Featured projects */}
