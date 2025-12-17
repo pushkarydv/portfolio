@@ -11,7 +11,7 @@ const forcedLoadTailwind = [
 const experiences = [
   {
     title: 'Frautect / Web & AI Engineer',
-    duration: 'Dec 2024 - Present',
+    duration: 'Dec 2024 - Aug 2025',
     description: `
       Developed end-to-end data scraping and storage solution, with capability to run on millions of parameters every day. Built internal dashboards and tools to label, showcase, and perform various operations on custom datasets. 
       Building prediction system for Brand Protection at scale.
